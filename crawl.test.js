@@ -9,8 +9,8 @@ test("normaliseURL strip protocol", () => {
 });
 
 test("normaliseURL strip protocol", () => {
-  const input = "";
+  const input = "https://blog.boot.dev/path/";
   const actual = normaliseURL(input);
-  const expected = "";
+  const expected = "blog.boot.dev/path";
   expect(actual).toEqual(expected);
 });
